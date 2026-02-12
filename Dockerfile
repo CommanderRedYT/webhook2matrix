@@ -18,9 +18,8 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY ./src ./src
 COPY ./tsconfig.json ./tsconfig.json
-
-RUN echo "{}" > config.json
+COPY ./package.json ./package.json
 
 ENV NODE_ENV=production
 
-CMD ["yarn", "start", "-c", "/app/config.json"]
+CMD ["yarn", "start", "-c", "/data/config.json"]
