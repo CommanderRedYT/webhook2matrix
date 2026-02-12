@@ -1,0 +1,46 @@
+{
+  "name": "webhook2matrix",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.ts",
+  "license": "AGPL-3.0",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-errors": "^3.0.0",
+    "express": "^5.2.1",
+    "express-winston": "^4.2.0",
+    "matrix-js-sdk": "^40.3.0-rc.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "winston": "^3.19.0",
+    "yargs": "^18.0.0"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^2.0.0",
+    "@eslint/eslintrc": "^3.3.3",
+    "@eslint/js": "^9.39.1",
+    "@microsoft/eslint-formatter-sarif": "^3.1.0",
+    "@types/express": "^5.0.6",
+    "@types/node": "^24",
+    "@types/yargs": "^17.0.35",
+    "eslint": "^9.39.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-no-relative-import-paths": "^1.6.1",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "fluent-json-schema": "^6.0.0",
+    "prettier": "^3.8.0",
+    "typescript-eslint": "^8.46.4"
+  }
+}

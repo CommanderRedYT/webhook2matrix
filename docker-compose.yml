@@ -1,0 +1,9 @@
+name: webhook2matrix
+services:
+  app:
+    image: ghcr.io/commanderredyt/webhook2matrix
+    restart: always
+    ports:
+      - "127.0.0.1:9456:9456"
+    volumes:
+      - ./config.json:/app/config.json
