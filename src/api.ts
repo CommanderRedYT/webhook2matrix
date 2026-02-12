@@ -12,6 +12,8 @@ const log = logging.child({ label: 'api' });
 
 const app = express();
 
+app.set('x-powered-by', 'false');
+
 const ajv = new Ajv({ allErrors: true });
 
 ajvErrors(ajv);
