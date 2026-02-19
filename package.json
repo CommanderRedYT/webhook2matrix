@@ -12,11 +12,11 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "ajv": "^8.17.1",
+    "ajv": "^8.18.0",
     "ajv-errors": "^3.0.0",
     "express": "^5.2.1",
     "express-winston": "^4.2.0",
-    "matrix-js-sdk": "^40.3.0-rc.0",
+    "matrix-js-sdk": "^41.0.0-rc.0",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "winston": "^3.19.0",
