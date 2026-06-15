@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  pull_request:
+     branches:
+       - main
 
 jobs:
   docker:
@@ -37,5 +40,5 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
-          push: true
+          push: ${{ github.event == 'push' }}
           tags: ${{ env.image_name }}:latest
